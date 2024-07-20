@@ -1,0 +1,101 @@
+.t-wrapper {
+    padding: 0 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.t-heading {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 3rem; /* Space below the heading */
+}
+
+.t-heading span {
+    display: block;
+    font-size: 3rem; /* Increase font size */
+    font-weight: bold; /* Make the font bold */
+    color: var(--darkBlue); /* Dark blue color for text */
+    position: relative; /* Position relative for the underline effect */
+}
+
+.t-heading span::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 6px; /* Height of the underline */
+    background: var(--orange); /* Underline color */
+    margin: 15px auto; /* Center the underline and add space from the text */
+    border-radius: 3px; /* Rounded corners for the underline */
+}
+
+.t-blur1 {
+    left: 38rem;
+    top: 16rem;
+}
+
+.t-blur2 {
+    top: 9rem;
+    left: 0;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem; /* Increased padding */
+    width: 35rem; /* Increased width */
+    height: 15rem; /* Increased height */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Colorful gradient background */
+    border: 5px solid var(--blueCard); /* Adjusted border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.client-label {
+    background-color: var(--orange); /* Vibrant label background color */
+    color: white; /* Text color for contrast */
+    padding: 0.5rem 1rem; /* Padding inside the label */
+    border-radius: 5px; /* Rounded corners for the label */
+    margin-bottom: 1rem; /* Space below the label */
+    text-align: center; /* Center-align text inside the label */
+    font-size: 1.2rem; /* Slightly larger font size */
+}
+
+.testimonial > p {
+    color: var(--gray); /* Text color for review */
+    font-size: 1rem; /* Adjusted font size */
+    text-align: center; /* Center-align text */
+}
+
+/* Slider Styles */
+.t-wrapper .swiper {
+    width: 100%;
+    height: 70%;
+}
+
+.t-wrapper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active {
+    background: var(--orange); /* Active pagination bullet color */
+}
+
+@media screen and (max-width: 480px) {
+    .t-wrapper {
+        padding: 0;
+    }
+
+    .testimonial {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height based on content */
+    }
+}
